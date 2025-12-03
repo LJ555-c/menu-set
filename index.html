@@ -240,48 +240,7 @@ nav a
 
 
 
-.warmheartedSub-text 
-{
-  font-family: 'NanumYeonJiCe';
-  position: relative;
-  z-index: 2;
-  color: #ffd28e;
-  font-size: 30pt;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 50px; /* 전문적이고 효율적인 인재 매칭 서비스 수직 위치*/
-  margin-bottom: -2px; /* 4개 이미지 수직 위치 */
-  user-select: none;
 
-  text-shadow:
--2px -1px 0 #ff9900,
-  2px -1px 0 #ff9900,
--2px  1px 0 #ff9900,
-  2px  1px 0 #ff9900;
-  
-}
-
-.warmhearted-text 
-{
-  font-family: 'NanumYeonJiCe';
-  
-  position: relative;
-  z-index: 2;
-  color: #ffffff;
-  font-size: 40pt;
-  font-weight: bold;
-  
-  text-align: center;
-  margin-top: 150px; /* 이미지 margin-top 300px보다 10px 위 */
-  user-select: none;
-
-  text-shadow:
-  -2px -1px 0 #0047ab,
-  2px -1px 0 #0047ab,
-  -2px  1px 0 #0047ab,
-  2px  1px 0 #0047ab;
-  
-}
 
     
 /* 새로 추가 */
@@ -582,11 +541,6 @@ nav a
     right: calc(50% - 150px); /* 화면 가운데 - 원 반지름 */
     opacity: 1;
   }
-}
-/* 모바일 전용 애니메이션 트리거 클래스 */
-@media (max-width: 1400px) 
-{
-
 }
 
 @keyframes dropdownFade 
@@ -1217,18 +1171,23 @@ margin-top: -4px;
 @media (max-width: 1400px)
 {
 
-  .warmhearted-text 
+
+
+ 
+  .mobile-warmhearted-text 
   {
+      color: #ffffff;
+    display: block;
     font-family: 'NanumYeonJiCe';
     
     position: relative;
     z-index: 2;
-    color: #ffffff;
-    font-size: 40pt;
+
+      font-size: 16px;      
     font-weight: bold;
     
     text-align: center;
-    margin-top: 500px; /* 이미지 margin-top 300px보다 10px 위 */
+    margin-top: 150px; /* 이미지 margin-top 300px보다 10px 위 */
     user-select: none;
 
     text-shadow:
@@ -1237,7 +1196,45 @@ margin-top: -4px;
     -2px  1px 0 #0047ab,
     2px  1px 0 #0047ab;
     
+}
+
+  .mobile-warmheartedSub-text 
+  {
+    display: block;
+      font-size: 16px;  
+    font-family: 'NanumYeonJiCe';
+    position: relative;
+    z-index: 2;
+    color: #ffd28e;
+    
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px; /* 전문적이고 효율적인 인재 매칭 서비스 수직 위치*/
+    margin-bottom: -2px; /* 4개 이미지 수직 위치 */
+    user-select: none;
+
+    text-shadow:
+  -2px -1px 0 #ff9900,
+    2px -1px 0 #ff9900,
+  -2px  1px 0 #ff9900,
+    2px  1px 0 #ff9900;
+    
   }
+
+  .warmhearted-text
+  {
+      display: none;   
+  }
+
+  .warmheartedSub-text
+  {
+      display: none;   
+  }
+
+
+
+
+
 
 
   .left-img 
@@ -1283,25 +1280,6 @@ margin-top: -4px;
  {
     display: none !important;
  }
-
-  .warmheartedSub-text 
-  {
-    position: relative;
-    z-index: 2;
-    color: #fafc7d;
-    font-size: 17pt;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 10px; /* 이미지 margin-top 300px보다 10px 위 */
-    margin-bottom: 100px; /* 이미지 margin-top 300px보다 10px 위 */
-    user-select: none;
-
-    text-shadow:
-    -2px -1px 0 #0047ab,
-    2px -1px 0 #0047ab,
-    -2px  1px 0 #0047ab,
-    2px  1px 0 #0047ab;
-  }
 
   .top-slider 
   {
@@ -1353,6 +1331,26 @@ margin-top: -4px;
   }
 
 
+  .warmheartedSub-text 
+  {
+    display: none;
+    position: relative;
+    z-index: 2;
+    color: #fafc7d;
+    font-size: 17pt;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px; /* 이미지 margin-top 300px보다 10px 위 */
+    margin-bottom: 100px; /* 이미지 margin-top 300px보다 10px 위 */
+    user-select: none;
+
+    text-shadow:
+    -2px -1px 0 #0047ab,
+    2px -1px 0 #0047ab,
+    -2px  1px 0 #0047ab,
+    2px  1px 0 #0047ab;
+  }
+
 
 
 
@@ -1390,16 +1388,6 @@ margin-top: -4px;
   .slider-container 
   {
     display: none;
-  }
-
-  .warmheartedSub-text
-  {
-    font-size: 20px;    
-  }
-
-  .warmhearted-text
-  {
-    font-size: 20px;        
   }
 
 
@@ -1518,6 +1506,65 @@ margin-top: -4px;
   /*@media (min-width: 769px) */
   @media (min-width: 1401px) 
   {
+
+
+      
+  .warmheartedSub-text 
+  {
+    display: block;
+    font-family: 'NanumYeonJiCe';
+    position: relative;
+    z-index: 2;
+    color: #ffd28e;
+    font-size: 30pt;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px; /* 전문적이고 효율적인 인재 매칭 서비스 수직 위치*/
+    margin-bottom: -2px; /* 4개 이미지 수직 위치 */
+    user-select: none;
+
+    text-shadow:
+  -2px -1px 0 #ff9900,
+    2px -1px 0 #ff9900,
+  -2px  1px 0 #ff9900,
+    2px  1px 0 #ff9900;
+    
+  }
+
+  .warmhearted-text 
+  {
+    display: block;
+    font-family: 'NanumYeonJiCe';
+    
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    font-size: 40pt;
+    font-weight: bold;
+    
+    text-align: center;
+    margin-top: 150px; /* 이미지 margin-top 300px보다 10px 위 */
+    user-select: none;
+
+    text-shadow:
+    -2px -1px 0 #0047ab,
+    2px -1px 0 #0047ab,
+    -2px  1px 0 #0047ab,
+    2px  1px 0 #0047ab;
+    
+  }
+  .mobile-warmhearted-text
+  {
+      display: none;   
+  }
+
+  .mobile-warmheartedSub-text
+  {
+      display: none;   
+  }
+
+
+
   .next-button 
   {
     display: block;
@@ -2914,6 +2961,10 @@ NEXT
   <!-- warmhearted 텍스트 -->
 <div class="warmhearted-text">Professional & Efficient Workforce Matching</div>  
 <div class="warmheartedSub-text">전문적이고 효율적인 인재 매칭 서비스</div>  
+
+
+<div class="mobile-warmhearted-text">Professional & Efficient Workforce Matching</div>  
+<div class="mobile-warmheartedSub-text">전문적이고 효율적인 인재 매칭 서비스</div>  
 
 <!-- 이미지 전면 표시 -->
 
